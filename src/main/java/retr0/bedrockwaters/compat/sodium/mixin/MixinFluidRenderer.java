@@ -34,7 +34,7 @@ public abstract class MixinFluidRenderer {
         float r = w * unpackRed(color);
         float g = w * unpackGreen(color);
         float b = w * unpackBlue(color);
-        float a = 255 * ((ExtensionClientWorld) MinecraftClient.getInstance().world).getOpacity(pos);
+        float a = 0xFF * ((ExtensionClientWorld) world).getOpacity(pos);
 
         return pack((int) r, (int) g, (int) b, (int) a);
     }

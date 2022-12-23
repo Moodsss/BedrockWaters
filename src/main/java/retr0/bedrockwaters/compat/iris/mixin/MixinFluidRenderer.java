@@ -53,7 +53,7 @@ public abstract class MixinFluidRenderer {
         // Don't patch alpha if some separate AO is set to be used (keeping shaders at their default appearance!).
         if (useSeparateAo) return;
 
-        var alpha = ((ExtensionClientWorld) MinecraftClient.getInstance().world).getOpacity(pos);
+        var alpha = ((ExtensionClientWorld) world).getOpacity(pos);
         for (int i = 0; i < 4; ++i) {
             quadColors[i] = multiplyAlpha(quadColors[i], alpha);
         }

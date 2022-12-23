@@ -1,12 +1,13 @@
 {
-    "required": true,
-    "plugin": "retr0.bedrockwaters.compat.sodium.SodiumCompatMixinPlugin",
-    "package": "retr0.bedrockwaters.compat.sodium.mixin",
-    "compatibilityLevel": "JAVA_17",
-    "mixins": [
-        "MixinFluidRenderer"
-    ],
-    "injectors": {
-        "defaultRequire": 1
-    }
+  "required": true,
+  "plugin": "retr0.bedrockwaters.compat.sodium.SodiumCompatMixinPlugin",
+  "package": "retr0.bedrockwaters.compat.sodium.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+	"MixinFluidRenderer",
+	"MixinWorldSlice"
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
 }
